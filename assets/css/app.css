@@ -196,6 +196,10 @@ body {
   font-weight: 300;
 }
 
+title {
+  color: #ee287c;
+}
+
 .header {
   background: url(../img/header.jpeg) no-repeat top center;
   background-size: cover;
