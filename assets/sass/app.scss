@@ -27,56 +27,55 @@ title {
 
 .header {
   position: relative;
-  background: url(../img/header.jpeg) no-repeat top center;
+  background: url(../img/header.jpg) no-repeat top center;
   background-size: cover;
   height: size(270);
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0; right: 0;
-    top: 0; bottom: 0;
-    background: rgba(0,0,0,.4);
-  }
 }
 .logo {
   position: absolute;
   top: size(12);
   right: size(15);
   font-size: size(15);
-  color: $colorTwo;
+  color: #fff;
   h1 {
     font-weight: 300;
     span {
       font-family: "Allura";
       font-size: size(33);
+      color: $colorOne;
     }
   }
 }
 .headerText {
-  position: relative;
   padding-left: size(15);
   padding-right: size(15);
   h2 {
     margin-top: size(36);
-    margin-bottom: size(21);
-    color: $colorTwo;
+    margin-bottom: size(33);
+    color: #fff;
     inline-size: size(240);
+    overflow-wrap: break-word;
     line-height: size(30);
     span {
       font-family: "Allura";
       font-size: size(39);
+      color: $colorOne;
     }
   }
-  a{
-    border: size(2) solid $colorTwo;
+  .btn {
+    border: size(2) solid #fff;
     border-radius: size(60);
+    box-shadow: size(2) size(2) #fff;
     padding: size(12);
     text-decoration: none;
+    text-transform: uppercase;
     font-size: size(15);
-    font-weight: 900;
-    color: $colorTwo;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s ease-in-out;
     &:hover {
-      background-color: $colorTwo;
+      border-color: $colorOne;
+      box-shadow: size(2) size(2) $colorOne;
       color: #fff;
     }
   }
@@ -91,7 +90,7 @@ title {
   left: 0;
   display: none;
   .modalMask {
-    box-shadow: inset 0 0 size(2000) rgba(255, 255, 255, .5);
+    background-color:rgba(0, 0, 0, .3);
     position: absolute;
     top: 0;
     right: 0;
@@ -99,19 +98,94 @@ title {
     left: 0;
   }
   .modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     top: 50%;
     left: 50%;
     right: 50%;
-    box-shadow: inset 0 0 size(2000) rgba(255, 255, 255, .5);
+    background-color:rgba(0, 0, 0, .6);
     transform: translateX(-50%) translateY(-50%);
-    width: 300px;
+    width: size(420);
     height: auto;
-    min-height: 50px;
+    min-height: size(51);
+    padding: size(12);
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: size(12);
+    text-decoration: none;
+    font-weight: 900;
+    color: #fff;
   }
 }
 #modal.open {
   display: block;
+}
+
+input[type='text'],
+[type='email'],
+[type='tel'],
+[type='date'], 
+select, 
+textarea {
+  background: none;
+  border: none;
+  border-bottom: #fff size(3) solid;
+  box-sizing: border-box;
+  font-size: size(15);
+  font-weight: 420;
+  letter-spacing:size(1);
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  padding: 0 0 size(9) 0;
+  margin: 0 0 size(12) 0;
+  transition: all 0.3s;
+  &:focus {
+    outline: none;
+    border-bottom: solid size(3) $colorOne;
+    padding: 0 0 size(18) 0;
+
+  }
+}
+#formButton {
+  background: none;
+  border: solid size(2) #fff;
+  box-shadow: size(2) size(2) #fff;
+  border-radius: size(60);
+  text-transform: uppercase;
+  font-size: size(15);
+  font-weight: 600;
+  padding: size(6) size(36);
+  margin-bottom: size(21);
+  color: #fff;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+  &:hover {
+    border: solid size(2) $colorOne;
+    box-shadow: size(2) size(2) $colorOne;
+  }
+}
+::-webkit-input-placeholder {
+	color: #fff;
+}
+:-moz-placeholder { 
+	color: #fff;
+	opacity: 1;
+}
+::-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	color: #fff;
 }
 @media screen and (min-width:$minWidth){
   .header {

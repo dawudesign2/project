@@ -1,50 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>Kcee Beauty | Wild Project</title>
-    <link rel="stylesheet" href="assets/css/app.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Kcee Beauty | Wild Project</title>
+  <link rel="stylesheet" href="assets/css/app.css">
 </head>
+
 <body>
-    <header class="header">
-      <div class="overlay"></div>
-        <nav>
-            <div class="navBar">
-              <div class="container navContainer">
-                  <input class="checkbox" type="checkbox" name="" id="" />
-                  <div class="hamburgerLines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                  </div>  
-                <div class="logo">
-                  <h1><span>K</span>cee Beauty</h1>
-                </div>
-                <div class="navItems">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">about</a></li>
-                  <li><a href="blog.html">blog</a></li>
-                  <li><a href="portfolio.html">portfolio</a></li>
-                  <li><a href="contact.html">contact</a></li>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div class="headerText">
-            <h2>Re-boost yourself with <span>K</span>cee Beauty</h2>
-            <a id='button' href="">Make an appointment</a>
-            <div id="modal">
-              <div class="modalMask"></div>
-              <div class="modalContent">
-                <h2>Make an appointement</h2>
-                <a class="close" href="">X</a>
-              </div>
-            </div>
+  <header class="header">
+    <nav>
+      <div class="navBar">
+        <div class="container navContainer">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburgerLines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
           </div>
-    </header>
-    <script src="assets/js/app.js"></script>
+          <div class="logo">
+            <h1><span>K</span>cee Beauty</h1>
+          </div>
+          <div class="navItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="headerText">
+      <h2>Re-boost yourself with <span>K</span>cee Beauty</h2>
+      <a id='button' class="btn" href="">Make an appointment</a>
+      <div id="modal">
+        <div class="modalMask"></div>
+        <div class="modalContent">
+          <h2>Make an appointement</h2>
+          <a class="close" href="">X</a>
+          <form action="">
+            <div class="name">
+              <label for="name"></label>
+              <input type="text" placeholder="My name is" name="name" id="name" required>
+            </div>
+            <div class="email">
+              <label for="email"></label>
+              <input type="email" placeholder="My email is" name="email" id="email">
+            </div>
+            <div class="phone">
+              <label for="phone"></label>
+              <input type="tel" placeholder="My phone is" name="phone" id="phone">
+            </div>
+            <div class="date">
+              <label for="date"></label>
+              <input type="date" name="date" id="date">
+            </div>
+            <div class="subject">
+              <label for="subject"></label>
+              <select placeholder="Subject line" name="subject" id="subject" required>
+                <option disabled hidden selected>Subject line</option>
+                <option>I'd like to start a project</option>
+                <option>I'd like to ask a question</option>
+                <option>I'd like to make a proposal</option>
+              </select>
+            </div>
+            <div class="staff">
+              <label for="staff"></label>
+              <select placeholder="Staff line" name="staff" id="staff" required>
+                <option disabled hidden selected>Subject line</option>
+                <option>I'd like to start a project</option>
+                <option>I'd like to ask a question</option>
+                <option>I'd like to make a proposal</option>
+              </select>
+            </div>
+            <div class="message">
+              <label for="message"></label>
+              <textarea name="message" placeholder="I'd like to chat about" id="message" cols="30" rows="5" required></textarea>
+            </div>
+            <div class="submit">
+              <input type="submit" value="Send appointement" id="formButton" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="assets/js/app.js"></script>
 </body>
+
 </html>
