@@ -26,9 +26,17 @@ title {
 }
 
 .header {
+  position: relative;
   background: url(../img/header.jpeg) no-repeat top center;
   background-size: cover;
   height: size(270);
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0,0,0,.4);
+  }
 }
 .logo {
   position: absolute;
@@ -44,7 +52,67 @@ title {
     }
   }
 }
+.headerText {
+  position: relative;
+  padding-left: size(15);
+  padding-right: size(15);
+  h2 {
+    margin-top: size(36);
+    margin-bottom: size(21);
+    color: $colorTwo;
+    inline-size: size(240);
+    line-height: size(30);
+    span {
+      font-family: "Allura";
+      font-size: size(39);
+    }
+  }
+  a{
+    border: size(2) solid $colorTwo;
+    border-radius: size(60);
+    padding: size(12);
+    text-decoration: none;
+    font-size: size(15);
+    font-weight: 900;
+    color: $colorTwo;
+    &:hover {
+      background-color: $colorTwo;
+      color: #fff;
+    }
+  }
+}
 
+#modal {
+  position: fixed;
+  z-index: 333;
+  top: 0;
+  right: 0; 
+  bottom: 0;
+  left: 0;
+  display: none;
+  .modalMask {
+    box-shadow: inset 0 0 size(2000) rgba(255, 255, 255, .5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .modalContent {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    box-shadow: inset 0 0 size(2000) rgba(255, 255, 255, .5);
+    transform: translateX(-50%) translateY(-50%);
+    width: 300px;
+    height: auto;
+    min-height: 50px;
+  }
+}
+#modal.open {
+  display: block;
+}
 @media screen and (min-width:$minWidth){
   .header {
     height: size(540);
