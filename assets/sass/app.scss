@@ -1,0 +1,48 @@
+@import '../sass/libs/reset.scss';
+@import '../sass/libs/nav.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$minWidth: 600px;
+$colorOne: #ee287c;
+$colorTwo: #fc86b7;
+$colorOr: #c79750;
+
+$base-size: 16;
+//Function to convert px value into rem
+//You can replace rem with any other value you want (rem is most preferred value for web)
+@function size($target, $context: $base-size) {
+  @return ($target / $context) * 1rem;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: size(18);
+  font-weight: 300;
+}
+.header {
+  background: url(../img/header.jpeg) no-repeat top center;
+  background-size: cover;
+  height: size(270);
+}
+.logo {
+  position: absolute;
+  top: size(12);
+  right: size(15);
+  font-size: size(15);
+  color: $colorTwo;
+  h1 {
+    font-weight: 300;
+    span {
+      font-family: "Allura";
+      font-size: size(33);
+    }
+  }
+}
+
+@media screen and (min-width:$minWidth){
+  .header {
+    height: size(540);
+  }
+}

@@ -1,0 +1,226 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.container {
+  max-width: 1050px;
+  width: 100%;
+  margin: auto;
+}
+
+.navBar {
+  width: 100%;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navBar .navItems {
+  display: flex;
+}
+
+.navBar .navContainer li {
+  list-style: none;
+}
+
+.navBar .navContainer a {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+.navBar .navContainer a:hover {
+  font-weight: bolder;
+}
+
+.navContainer {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.navContainer .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.navContainer .hamburgerLines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navContainer .hamburgerLines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #fc86b7;
+}
+
+.navContainer .hamburgerLines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navContainer .hamburgerLines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.navContainer .hamburgerLines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navBar .navItems {
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navBar .navItems li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.navContainer input[type=checkbox]:checked ~ .navItems {
+  transform: translateX(0);
+}
+
+.navContainer input[type=checkbox]:checked ~ .hamburgerLines .line1 {
+  transform: rotate(45deg);
+}
+
+.navContainer input[type=checkbox]:checked ~ .hamburgerLines .line2 {
+  transform: scaleY(0);
+}
+
+.navContainer input[type=checkbox]:checked ~ .hamburgerLines .line3 {
+  transform: rotate(-45deg);
+}
+
+.navContainer input[type=checkbox]:checked ~ .logo {
+  display: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.header {
+  background: url(../img/header.jpeg) no-repeat top center;
+  background-size: cover;
+  height: 16.875rem;
+}
+
+.logo {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.9375rem;
+  font-size: 0.9375rem;
+  color: #fc86b7;
+}
+.logo h1 {
+  font-weight: 300;
+}
+.logo h1 span {
+  font-family: "Allura";
+  font-size: 2.0625rem;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    height: 33.75rem;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
