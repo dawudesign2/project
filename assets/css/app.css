@@ -375,6 +375,17 @@ textarea:focus {
   color: #fff;
 }
 
+.container {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+.container .img {
+  background-color: #ee287c;
+  width: 100%;
+  height: 200px;
+}
+
 @media screen and (min-width: 600px) {
   .header {
     height: 33.75rem;

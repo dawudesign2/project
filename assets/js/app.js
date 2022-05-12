@@ -11,3 +11,4 @@ const onClose = (e) => {
 // Ecouteur
 document.querySelector('#button').addEventListener('click', onClick);
 document.querySelector('.close').addEventListener('click', onClose);
+

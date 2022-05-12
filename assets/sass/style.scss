@@ -1,0 +1,8 @@
+@import '../sass/libs/reset.scss';
+@import '../sass/libs/size.scss';
+@import '../sass/libs/graphicalCharter.scss';
+
+.header {
+    background: url('../img/agence/agence1.jpg') no-repeat;
+    height: size(200);
+}

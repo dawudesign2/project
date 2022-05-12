@@ -187,6 +187,16 @@ textarea {
 :-ms-input-placeholder {
 	color: #fff;
 }
+.container {
+  position: relative;
+  padding-left: size(15);
+  padding-right: size(15);
+  .img {
+    background-color: #ee287c;
+    width: 100%;
+    height: 200px;
+  }
+}
 @media screen and (min-width:$minWidth){
   .header {
     height: size(540);
