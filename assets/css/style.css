@@ -59,8 +59,47 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-  background: url("../img/agence/agence1.jpg") no-repeat;
-  height: 12.5rem;
+  position: relative;
+  background: url(../img/header.jpg);
+  background-size: cover;
+  height: 18.75rem;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  background-color: #ee287c;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 18.75rem;
+  filter: opacity(0.2);
+  z-index: 1;
+}
+.header .headerIcon {
+  position: relative;
+  display: block;
+  width: 3.1875rem;
+  height: 4.125rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.header .headerIcon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1.3125rem;
+  height: auto;
+  top: 0.9375rem;
+  left: 0.9375rem;
+  box-shadow: 0 0.5625rem 0 0.0625rem #fff, 0 0.9375rem 0 0.0625rem #fff, 0 1.3125rem 0 0.0625rem #fff;
+}
+
+.nav {
+  display: none;
+}
+
+.openNav {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

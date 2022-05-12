@@ -2,3 +2,47 @@
 @import '../sass/libs/size.scss';
 @import '../sass/libs/graphicalCharter.scss';
 
+
+.header {
+    position: relative;
+    background: url(../img/header.jpg);
+    background-size: cover;
+    height:size(300);
+    &::after {
+        content: '';
+        position:absolute;
+        background-color:$colorOne;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: size(300);
+        filter: opacity(.2);
+        z-index: 1;
+    }
+    .headerIcon {
+        position: relative;
+        display: block;
+        width: size(51);
+        height: size(66);
+        cursor: pointer;
+        z-index: 2;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: size(21);
+            height: auto;
+            top: size(15);
+            left: size(15);
+            box-shadow:0 size(9) 0 size(1) #fff, 0 size(15) 0 size(1) #fff, 0 size(21) 0 size(1) #fff;
+
+        }
+    }
+}
+
+.nav {
+    display: none;
+}
+.openNav {
+    display: block;
+}
