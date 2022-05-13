@@ -47,7 +47,6 @@ body {
         }
     }
 }
-
 .nav {
   display: none;
   display: flex;
@@ -131,7 +130,6 @@ body {
         color: #fff;
     }
 }
-
 #modal {
     position: fixed;
     z-index: 333;
@@ -194,8 +192,7 @@ body {
       }
     }
   }
-
-  input[type='text'],
+input[type='text'],
 [type='email'],
 [type='tel'],
 [type='date'], 
