@@ -243,7 +243,7 @@ body {
 
 .community {
   background-color: #fc86b7;
-  height: 3.75rem;
+  height: 3.9375rem;
   padding: 0 0.9375rem 0 0.9375rem;
   display: flex;
   align-items: center;
@@ -324,6 +324,88 @@ textarea:focus {
 
 :-ms-input-placeholder {
   color: #fff;
+}
+
+.kcee {
+  background: url("../img/section1.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 18.75rem;
+}
+.kcee .kceeContent {
+  display: flex;
+  justify-content: space-around;
+}
+.kcee .kceeContent .logoImg img {
+  width: 100%;
+  max-width: 18.75rem;
+  height: auto;
+}
+.kcee .kceeContent .aboutText {
+  font-size: 1.3125rem;
+  font-weight: 420;
+  text-transform: uppercase;
+  padding: 8.8125rem 0 0 5.0625rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.kcee .kceeContent .aboutText a {
+  text-decoration: none;
+  color: #333;
+}
+.kcee .kceeContent .aboutText a:hover {
+  color: #ee287c;
+}
+.kcee .kceeContent .explorerText {
+  font-size: 1.3125rem;
+  font-weight: 420;
+  text-transform: uppercase;
+  padding: 5.625rem 4.5rem 0 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.kcee .kceeContent .explorerText a {
+  text-decoration: none;
+  color: #333;
+}
+.kcee .kceeContent .explorerText a:hover {
+  color: #ee287c;
+}
+
+.institute {
+  background: url(../img/institute.png) no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 37.5rem;
+  margin-top: -4.5rem;
+}
+.institute .instituteTitle {
+  display: flex;
+  align-items: center;
+  padding: 0 0.9375rem 0 0.9375rem;
+}
+.institute .instituteTitle h2 {
+  font-family: "Allura";
+  font-size: 7.5rem;
+  padding-left: 0.75rem;
+  margin: 0.75rem;
+}
+.institute .instituteTitle span {
+  background-color: #333;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  margin: 0.5625rem;
+}
+.institute .instituteTitle h3 {
+  font-weight: 411;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

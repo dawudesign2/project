@@ -181,7 +181,7 @@ body {
 
   .community {
     background-color: $colorTwo;
-    height: size(60);
+    height: size(63);
     padding: 0 size(15) 0 size(15);
     display: flex;
     align-items: center;
@@ -252,4 +252,87 @@ textarea {
 }
 :-ms-input-placeholder {
 	color: #fff;
+}
+
+.kcee {
+  background: url('../img/section1.png') no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: size(300);
+  .kceeContent {
+    display: flex;
+    justify-content: space-around;
+    .logoImg {
+      img{
+        width: 100%;
+        max-width: size(300);
+        height: auto;
+      }
+    }
+    .aboutText {
+      font-size:size(21);
+      font-weight: 420;
+      text-transform: uppercase;
+      padding: size(141) 0 0 size(81);
+      -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+    	-o-transition: all 0.3s;
+	    transition: all 0.3s;
+      a{
+        text-decoration: none;
+        color: #333;
+        &:hover {
+          color: $colorOne;
+        }
+      }
+    }
+    .explorerText{
+      font-size: size(21);
+      font-weight: 420;
+      text-transform: uppercase;
+      padding: size(90) size(72) 0 0;
+      -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+	    -o-transition: all 0.3s;
+	    transition: all 0.3s;
+      a{
+        text-decoration: none;
+        color: #333;
+        &:hover {
+          color: $colorOne;
+        }
+      }
+    }
+  }
+}
+.institute {
+  background: url(../img/institute.png) no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: size(600);
+  margin-top: size(-72);
+  .instituteTitle{
+    display: flex;
+    align-items: center;
+    padding: 0 size(15) 0 size(15);
+    h2 {
+      font-family: 'Allura';
+      font-size: size(120);
+      padding-left: size(12);
+      margin: size(12);
+    }
+    span {
+      background-color: #333;
+      width: size(15);
+      height: size(15);
+      margin: size(9);
+    }
+    h3{
+      font-weight: 411;
+      letter-spacing: size(2);
+      text-transform: uppercase;
+    }
+  }
 }
