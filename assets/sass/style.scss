@@ -2,23 +2,19 @@
 @import '../sass/libs/size.scss';
 @import '../sass/libs/graphicalCharter.scss';
 
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: size(15);
+  font-weight: 300;
+}
 
 .header {
     position: relative;
-    background: url(../img/header.jpg);
+    background: url(../img/design.png);
     background-size: cover;
-    height:size(300);
-    &::after {
-        content: '';
-        position:absolute;
-        background-color:$colorOne;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: size(300);
-        filter: opacity(.2);
-        z-index: 1;
-    }
+    height:size(465);
+    padding-left: size(15);
+    padding-right: size(15);
     .headerIcon {
         position: relative;
         display: block;
@@ -34,15 +30,229 @@
             height: auto;
             top: size(15);
             left: size(15);
-            box-shadow:0 size(9) 0 size(1) #fff, 0 size(15) 0 size(1) #fff, 0 size(21) 0 size(1) #fff;
-
+            box-shadow:0 size(9) 0 size(1) #333, 0 size(15) 0 size(1) #333, 0 size(21) 0 size(1) #333;
+        }
+    }
+    h2 {
+        margin-top: size(120);
+        margin-bottom: size(33);
+        color: #333;
+        inline-size: size(210);
+        overflow-wrap: break-word;
+        line-height: size(30);
+        span {
+          font-family: "Allura";
+          font-size: size(39);
+          color: $colorOne;
         }
     }
 }
 
 .nav {
-    display: none;
+  display: none;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $colorTwo;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition-duration: 0.75s;
+  .contentNav {
+    margin-top: size(30);
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600;
+      -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+  	  -o-transition: all 0.3s;
+	    transition: all 0.3s;
+      &:hover {
+        color: $colorOne;
+      }
+    }
+  }
+  .infoNav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    margin-top: size(252);
+    a{
+      text-decoration: none;
+      color: #fff;
+      font-weight: 900;
+      -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+  	  -o-transition: all 0.3s;
+	    transition: all 0.3s;
+      &:hover {
+        color: $colorOne;
+      }
+    }
+  }
+    
 }
 .openNav {
     display: block;
+    transform: scale(1);
+    transition-duration: 0.75s;
+}
+
+.btn {
+    background: none;
+    border: solid size(2) $colorOne;
+    border-radius: size(21);
+    box-shadow: size(2) size(2) $colorOne;
+    -webkit-box-shadow: size(2) size(2) $colorOne;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: size(9);
+    -webkit-transition: all 0.3s;
+	  -moz-transition: all 0.3s;
+	  -ms-transition: all 0.3s;
+  	-o-transition: all 0.3s;
+	  transition: all 0.3s;
+    &:hover {
+        background-color: $colorOne;
+        color: #fff;
+    }
+}
+
+#modal {
+    position: fixed;
+    z-index: 333;
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    display: none;
+    .modalMask {
+      background-color:rgba(0, 0, 0, .3);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    .modalContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      right: 50%;
+      background-color:rgba(0, 0, 0, .6);
+      transform: translateX(-50%) translateY(-50%);
+      width: size(420);
+      height: auto;
+      min-height: size(51);
+      padding: size(12);
+      h2 {
+        color: #fff;
+        border-bottom: solid size(1) #fff;
+      }
+    }
+    .close {
+      position: absolute;
+      top: 0;
+      right: size(12);
+      text-decoration: none;
+      font-weight: 900;
+      color: #fff;
+    }
+  }
+  #modal.open {
+    display: block;
+  }
+
+  .community {
+    background-color: $colorTwo;
+    height: size(60);
+    padding: 0 size(15) 0 size(15);
+    display: flex;
+    align-items: center;
+    .comLeft {
+      color: #fff;
+      h3 {
+        font-weight: 420;
+      }
+    }
+  }
+
+  input[type='text'],
+[type='email'],
+[type='tel'],
+[type='date'], 
+select, 
+textarea {
+  background: none;
+  border: none;
+  border-bottom: #fff size(3) solid;
+  box-sizing: border-box;
+  font-size: size(15);
+  font-weight: 420;
+  letter-spacing:size(1);
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  padding: 0 0 size(9) 0;
+  margin: 0 0 size(12) 0;
+  transition: all 0.3s;
+  &:focus {
+    outline: none;
+    border-bottom: solid size(3) $colorOne;
+    padding: 0 0 size(18) 0;
+
+  }
+}
+#formButton {
+  background: none;
+  border: solid size(2) #fff;
+  box-shadow: size(2) size(2) #fff;
+  border-radius: size(60);
+  text-transform: uppercase;
+  font-size: size(15);
+  font-weight: 600;
+  padding: size(6) size(36);
+  margin-bottom: size(21);
+  color: #fff;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+  &:hover {
+    border: solid size(2) $colorOne;
+    box-shadow: size(2) size(2) $colorOne;
+  }
+}
+::-webkit-input-placeholder {
+	color: #fff;
+}
+:-moz-placeholder { 
+	color: #fff;
+	opacity: 1;
+}
+::-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	color: #fff;
 }
