@@ -2,6 +2,9 @@
 @import '../sass/libs/size.scss';
 @import '../sass/libs/graphicalCharter.scss';
 
+
+$minWidth: 600px;
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: size(15);
@@ -10,8 +13,8 @@ body {
 
 .header {
     position: relative;
-    background: url(../img/design.png);
-    background-size: cover;
+    background: url(../img/design.png) no-repeat center;
+    background-size: contain;
     height:size(465);
     padding-left: size(15);
     padding-right: size(15);
@@ -34,17 +37,17 @@ body {
         }
     }
     h2 {
-        margin-top: size(120);
-        margin-bottom: size(33);
-        color: #333;
-        inline-size: size(210);
-        overflow-wrap: break-word;
-        line-height: size(30);
-        span {
-          font-family: "Allura";
-          font-size: size(39);
-          color: $colorOne;
-        }
+      margin-top: size(111);
+      margin-bottom: size(33);
+      color: #333;
+      inline-size: size(210);
+      overflow-wrap: break-word;
+      line-height: size(30);
+      span {
+        font-family: "Allura";
+        font-size: size(39);
+        color: $colorOne;
+      }
     }
 }
 .nav {
@@ -129,6 +132,45 @@ body {
         background-color: $colorOne;
         color: #fff;
     }
+}
+.kceeTitle{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 0 size(15) 0 size(15);
+  h2 {
+    font-family: 'Allura';
+    font-size: size(120);
+    padding-left: size(12);
+    margin: size(12);
+  }
+  span {
+    background-color: #333;
+    width: size(15);
+    height: size(15);
+    margin: size(9);
+  }
+  h3{
+    font-weight: 411;
+    letter-spacing: size(2);
+    text-transform: uppercase;
+  }
+  p {
+    letter-spacing: size(3);
+    margin-top: size(-60);
+    font-weight: 420;
+    width: 100%;
+  }
+}
+.circle {
+  display: block;
+  background-color: $colorOne;
+  background: radial-gradient(circle at size(100) size(72), #fff, $colorTwo);
+  filter: opacity(54%);
+  border-radius: 50%;
+  height: size(90);
+  width: size(90);
+  margin: 0;
 }
 #modal {
     position: fixed;
@@ -255,10 +297,6 @@ textarea {
 }
 
 .kcee {
-  background: url('../img/section1.png') no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: size(300);
   .kceeContent {
     display: flex;
     justify-content: space-around;
@@ -270,15 +308,29 @@ textarea {
       }
     }
     .aboutText {
+      position: relative;
       font-size:size(21);
       font-weight: 420;
       text-transform: uppercase;
-      padding: size(141) 0 0 size(81);
+      padding: size(300) 0 0 size(30);
       -webkit-transition: all 0.3s;
 	    -moz-transition: all 0.3s;
 	    -ms-transition: all 0.3s;
     	-o-transition: all 0.3s;
 	    transition: all 0.3s;
+      .One {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: size(60);
+        height: size(60);
+        background: radial-gradient(circle at size(30) size(69), #fff, $colorOne);
+      }
+      .Two {
+        position: absolute;
+        bottom: size(20);
+        left: size(60);
+      }
       a{
         text-decoration: none;
         color: #333;
@@ -288,15 +340,29 @@ textarea {
       }
     }
     .explorerText{
+      position: relative;
       font-size: size(21);
       font-weight: 420;
       text-transform: uppercase;
-      padding: size(90) size(72) 0 0;
+      padding: size(90) size(120) 0 0;
       -webkit-transition: all 0.3s;
 	    -moz-transition: all 0.3s;
 	    -ms-transition: all 0.3s;
 	    -o-transition: all 0.3s;
 	    transition: all 0.3s;
+      .Three {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: size(60);
+        height: size(60);
+        background: radial-gradient(circle at size(30) size(69), #fff, $colorOne);
+      }
+      .Four {
+        position: absolute;
+        top: size(111);
+        right: size(60);
+      }
       a{
         text-decoration: none;
         color: #333;
@@ -308,31 +374,263 @@ textarea {
   }
 }
 .institute {
-  background: url(../img/institute.png) no-repeat;
-  background-size: contain;
-  width: 100vw;
-  height: size(600);
-  margin-top: size(-72);
-  .instituteTitle{
+  position: relative;
+  padding: 0 size(15) 0 size(15);
+  .Five {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: size(60);
+    height: size(60);
+    background: radial-gradient(circle at size(30) size(69), #fff, $colorOne);
+  }
+  .Six {
+    position: absolute;
+    bottom: size(-30);
+    left: 0;
+    z-index: -1;
+  }
+  .Seven {
+    position: absolute;
+    bottom: size(-60);
+    right: 0;
+    z-index: -1;
+  }
+  .instituteContent {
+    .instituteImg {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      gap: size(12);
+      img{
+        width: 100%;
+        max-width: size(420);
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  padding: 0 size(15) 0 size(15);
+  .serviceContent {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0 size(15) 0 size(15);
-    h2 {
-      font-family: 'Allura';
-      font-size: size(120);
-      padding-left: size(12);
-      margin: size(12);
-    }
-    span {
-      background-color: #333;
-      width: size(15);
-      height: size(15);
+    padding: size(15);
+    letter-spacing: size(2);
+    p{
       margin: size(9);
+      padding-bottom: size(12);
+      overflow-wrap: break-word;
     }
-    h3{
-      font-weight: 411;
-      letter-spacing: size(2);
+    a {
+      font-size: size(15);
+    }
+    .listContent {
+      display: flex;
+      margin-bottom: size(21);
+    }
+    .imgContent {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.whyUs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: size(60);
+  .whyUsImg{
+    img{
+      width: 100%;
+      max-width:size(900);
+      height: auto;
+    }
+  }
+  .whyUsContent {
+    .Eight {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: size(60);
+      height: size(60);
+      z-index: -1;
+      background: radial-gradient(circle at size(30) size(69), #fff, $colorOne);
+    }
+    .Nine {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .Ten {
+      position: absolute;
+      bottom:size(-12);
+      right: size(120);
+      width: size(60);
+      height: size(60);
+      background: radial-gradient(circle at size(30) size(69), #fff, $colorOne);
+    }
+    h2 {
+      font-size:size(51);
       text-transform: uppercase;
+      span {
+        color: $colorOne;
+      }
+    }
+    p{
+      padding: size(9);
+      margin-bottom: size(12);
+    }
+    a {
+      letter-spacing: size(2);
+      font-size: size(15);
+    }
+  }
+}
+.register {
+  position: relative;
+  background-color: $colorTwo;
+  height:size(210);
+  margin-top: size(30);
+  display: flex;
+  align-items: center;
+  padding-left: size(21);
+  .registerImg{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    max-width: size(210);
+    height: auto;
+    filter: opacity(51%);
+  }
+  .registerContent {
+    font-size: size(24);
+    font-weight: 600;
+    color: #fff;
+    p{
+      text-transform: uppercase;
+      margin-bottom: size(9);
+    }
+    a {
+      color: #fff;
+      font-size: size(15);
+    }
+  }
+}
+.contact {
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100%;
+    max-width: 100%;
+    margin: size(21);
+    .contactForm{
+      background-color: $colorTwo;
+      width: size(450);
+      min-height: size(450);
+      form {
+        padding: size(12);
+      }
+      .contactName,
+      .contactEmail{
+        margin-bottom: 39px;
+      }
+    }
+    .contactMap {
+      border: 20px solid transparent;
+      iframe {
+        min-height: 100%;
+        max-width: size(450);
+      }
+    }
+  }
+}
+
+@media screen and (min-width:$minWidth){
+  .header {
+    background-position: right;
+    .headerTitle{
+      margin: size(21);
+    }
+    h2 {
+      margin-top: size(81);
+      font-size: size(54);
+      inline-size: size(519);
+      line-height: size(60);
+      overflow-wrap: break-word;
+      span {
+        font-size: size(90);
+      }
+    }
+  }
+  .community {
+    .comLeft {
+      h3 {
+        padding-left: size(21);
+      }
+    }
+  }
+  #modal {
+    .modalContent {
+      width: size(640);
+    }
+  }
+  .btn {
+    font-size: size(18);
+  }
+  .services {
+    .serviceContent {
+      flex-direction: row;
+      p {
+        inline-size: size(720);
+      }
+    }
+  }
+  .institute {
+    .instituteContent {
+      .instituteImg {
+        flex-flow: row;
+      }
+    }
+  }
+  .whyUs {
+    justify-content: space-around;
+    .whyUsContent{
+      width: size(600);
+    }
+  }
+  .register {
+    justify-content: center;
+    padding-left: 0;
+    .registerContent {
+      a {
+        font-size: size(18);
+      }
+    }
+  }
+  .contact {
+    .contactContainer {
+      flex-direction: row;
+      .contactForm {
+        width: size(600);
+      }
+      .contactMap {
+        iframe {
+          max-width: size(600);
+        }
+      }
     }
   }
 }

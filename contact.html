@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,87 +9,123 @@
     <title>Kcee Beauty | Contact</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <header class="header">
-    <a href="#" class="headerIcon" id="headerIcon"></a>
-    <nav class="nav">
-        <div class="contentNav">
-            <a href="app.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="blog.html">Blog</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div class="infoNav">
-            <a href="tel:0600000000">+33 6 000 000 00</a>
-            <a href="mailto:contact@kceebeauty.com">contact@kceebeauty.com</a>
-            <p>Address : 12 avenue des champs Elysées 75008 </p>
-        </div>
-    </nav>
-    <h2>Re-boost yourself with <span>K</span>cee Beauty</h2>
-    <a href="" id="btn" class="btn">Make an appointment</a>
-    <section id="modal" class="modal">
-        <div class="modalMask"></div>
-        <div class="modalContent">
-            <a href="" class="close">X</a>
-            <h2>Make an appointement</h2>
-            <form action="">
-                <div class="name">
-                    <label for="name"></label>
-                    <input type="text" placeholder="My name is" name="name" id="name" required>
+    <header class="header">
+        <a href="#" class="headerIcon" id="headerIcon"></a>
+        <nav class="nav">
+            <div class="contentNav">
+                <a href="app.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="infoNav">
+                <a href="tel:0600000000">+33 6 000 000 00</a>
+                <a href="mailto:contact@kceebeauty.com">contact@kceebeauty.com</a>
+                <p>Address : 12 avenue des champs Elysées 75008 </p>
+            </div>
+        </nav>
+        <h2>Re-boost yourself with <span>K</span>cee Beauty</h2>
+        <a href="" id="btn" class="btn">Make an appointment</a>
+        <section id="modal" class="modal">
+            <div class="modalMask"></div>
+            <div class="modalContent">
+                <a href="" class="close">X</a>
+                <h2>Make an appointement</h2>
+                <form action="">
+                    <div class="name">
+                        <label for="name"></label>
+                        <input type="text" placeholder="My name is" name="name" id="name" required>
+                    </div>
+                    <div class="email">
+                        <label for="email"></label>
+                        <input type="email" placeholder="My email is" name="email" id="email">
+                    </div>
+                    <div class="phone">
+                        <label for="phone"></label>
+                        <input type="tel" placeholder="My phone is" name="phone" id="phone">
+                    </div>
+                    <div class="date">
+                        <label for="date"></label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="subject">
+                        <label for="subject"></label>
+                        <select placeholder="Subject line" name="subject" id="subject" required>
+                            <option disabled hidden selected>Subject line</option>
+                            <option>I'd like to start a project</option>
+                            <option>I'd like to ask a question</option>
+                            <option>I'd like to make a proposal</option>
+                        </select>
+                    </div>
+                    <div class="staff">
+                        <label for="staff"></label>
+                        <select placeholder="Staff line" name="staff" id="staff" required>
+                            <option disabled hidden selected>Subject line</option>
+                            <option>I'd like to start a project</option>
+                            <option>I'd like to ask a question</option>
+                            <option>I'd like to make a proposal</option>
+                        </select>
+                    </div>
+                    <div class="message">
+                        <label for="message"></label>
+                        <textarea name="message" placeholder="I'd like to chat about" id="message" cols="30" rows="5"
+                            required></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Send appointement" id="formButton" />
+                    </div>
+                </form>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="community">
+            <div class="comLeft">
+                <h3>Join the community</h3>
+            </div>
+            <div class="comRight">
+            </div>
+        </section>
+        <section class="contact">
+            <div class="kceeTitle">
+                <h2>K</h2><span></span>
+                <h3>Contact Us .</h3>
+            </div>
+            <div class="contactContainer">
+                <div class="contactMap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.395996428638!2d2.307326151233853!3d48.869727079186845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc501e717f1%3A0x9ef912b439932bd6!2s12%20Av.%20des%20Champs-%C3%89lys%C3%A9es%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1652558071503!5m2!1sfr!2sfr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="email">
-                    <label for="email"></label>
-                    <input type="email" placeholder="My email is" name="email" id="email">
+                <div class="contactForm">
+                    <form action="">
+                        <div class="contactName">
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="My name is :" name="name" id="name" required>
+                        </div>
+                        <div class="contactEmail">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="My email is :" name="email" id="email" required>
+                        </div>
+                        <div class="ContactMessage">
+                            <label for="message">Message</label>
+                            <textarea name="message" placeholder="I'd like to chat about :" id="message" cols="30"
+                                rows="5" required></textarea>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Send your message" id="formButton" />
+                        </div>
+                    </form>
                 </div>
-                <div class="phone">
-                    <label for="phone"></label>
-                    <input type="tel" placeholder="My phone is" name="phone" id="phone">
-                </div>
-                <div class="date">
-                    <label for="date"></label>
-                    <input type="date" name="date" id="date">
-                </div>
-                <div class="subject">
-                    <label for="subject"></label>
-                    <select placeholder="Subject line" name="subject" id="subject" required>
-                        <option disabled hidden selected>Subject line</option>
-                        <option>I'd like to start a project</option>
-                        <option>I'd like to ask a question</option>
-                        <option>I'd like to make a proposal</option>
-                    </select>
-                </div>
-                <div class="staff">
-                    <label for="staff"></label>
-                    <select placeholder="Staff line" name="staff" id="staff" required>
-                        <option disabled hidden selected>Subject line</option>
-                        <option>I'd like to start a project</option>
-                        <option>I'd like to ask a question</option>
-                        <option>I'd like to make a proposal</option>
-                    </select>
-                </div>
-                <div class="message">
-                    <label for="message"></label>
-                    <textarea name="message" placeholder="I'd like to chat about" id="message" cols="30" rows="5"
-                        required></textarea>
-                </div>
-                <div class="submit">
-                    <input type="submit" value="Send appointement" id="formButton" />
-                </div>
-            </form>
-        </div>
-    </section>
-</header>
-<main class="main">
-    <section class="community">
-        <div class="comLeft">
-            <h3>Join the community</h3>
-        </div>
-        <div class="comRight">
-        </div>
-    </section>
-</main>
-<footer class="footer"></footer>
-<script src="assets/js/app.js"></script>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>
