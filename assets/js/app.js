@@ -27,6 +27,7 @@
     }
     document.querySelector('#headerIcon').addEventListener('click', onNav);
 })();
+
 //Explore 
 (function() {
      // Function Onclick ajouter la classe OnExolorer

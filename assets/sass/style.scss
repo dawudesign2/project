@@ -692,10 +692,49 @@ textarea {
 }
 .footer {
   background-color: $colorTwo;
-  height: size(250);
+  height: size(90);
   border-top:solid size(3) $colorOr;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .footerContent {
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    span{
+      font-family: 'Allura';
+      font-size: size(30);
+      font-weight:600;
+      color: $colorOne;
+    }
+  }
 }
-
+.about {
+  position: relative;
+  .Eleven {
+    position: absolute;
+    right: 0;
+    width: size(60);
+    height: size(60);
+    background: radial-gradient(circle at size(30) size(69), #fff, $colorOne);
+  }
+  .Twelve {
+    position:absolute;
+    top: 0;
+    left: size(21);
+    right: 0;
+    z-index: -1;
+  }
+  .Thirteen {
+    position: absolute;
+    bottom: 0;
+    left: size(210);
+    width: size(60);
+    height: size(60);
+    background: radial-gradient(circle at size(30) size(69), #fff, $colorOne);
+  }
+}
 @media screen and (min-width:$minWidth){
   .header {
     background-position: right;

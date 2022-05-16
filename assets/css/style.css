@@ -753,8 +753,49 @@ textarea:focus {
 
 .footer {
   background-color: #fc86b7;
-  height: 15.625rem;
+  height: 5.625rem;
   border-top: solid 0.1875rem #c79750;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footerContent {
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+}
+.footer .footerContent span {
+  font-family: "Allura";
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #ee287c;
+}
+
+.about {
+  position: relative;
+}
+.about .Eleven {
+  position: absolute;
+  right: 0;
+  width: 3.75rem;
+  height: 3.75rem;
+  background: radial-gradient(circle at 1.875rem 4.3125rem, #fff, #ee287c);
+}
+.about .Twelve {
+  position: absolute;
+  top: 0;
+  left: 1.3125rem;
+  right: 0;
+  z-index: -1;
+}
+.about .Thirteen {
+  position: absolute;
+  bottom: 0;
+  left: 13.125rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  background: radial-gradient(circle at 1.875rem 4.3125rem, #fff, #ee287c);
 }
 
 @media screen and (min-width: 600px) {
