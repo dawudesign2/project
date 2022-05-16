@@ -284,6 +284,7 @@ body {
 
 .community {
   background-color: #fc86b7;
+  border-bottom: solid 0.1875rem #c79750;
   height: 3.9375rem;
   padding: 0 0.9375rem 0 0.9375rem;
   display: flex;
@@ -504,7 +505,7 @@ textarea:focus {
 }
 .services .serviceContent .listContent {
   display: flex;
-  margin-bottom: 1.3125rem;
+  margin-bottom: 2.625rem;
 }
 .services .serviceContent .imgContent img {
   width: 100%;
@@ -552,8 +553,7 @@ textarea:focus {
   color: #ee287c;
 }
 .whyUs .whyUsContent p {
-  padding: 0.5625rem;
-  margin-bottom: 0.75rem;
+  padding: 0.5625rem 0 2.625rem 0;
 }
 .whyUs .whyUsContent a {
   letter-spacing: 0.125rem;
@@ -563,6 +563,7 @@ textarea:focus {
 .register {
   position: relative;
   background-color: #fc86b7;
+  border-bottom: solid 0.1875rem #c79750;
   height: 13.125rem;
   margin-top: 1.875rem;
   display: flex;
@@ -712,6 +713,50 @@ textarea:focus {
   border-radius: 0;
 }
 
+.customers .customerCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.customers .customerCards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.125rem;
+  padding: 0.75rem;
+  max-width: 37.5rem;
+}
+.customers .customerCards .card img {
+  width: 100%;
+  max-width: 9.375rem;
+  height: 9.375rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid 0.125rem #ee287c;
+}
+.customers .customerCards .cardBody {
+  margin: 0.75rem;
+  max-width: 37.5rem;
+  white-space: normal;
+}
+.customers .customerCards .cardBody h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.customers .customerCards .cardBody h4 span {
+  font-weight: 300;
+  font-size: 0.75rem;
+  padding: 0.75rem;
+  color: #ee287c;
+}
+
+.footer {
+  background-color: #fc86b7;
+  height: 15.625rem;
+  border-top: solid 0.1875rem #c79750;
+}
+
 @media screen and (min-width: 600px) {
   .header {
     background-position: right;
@@ -776,6 +821,11 @@ textarea:focus {
   }
   .contact .contactContainer .contactMap iframe {
     max-width: 37.5rem;
+  }
+
+  .customers .customerCards {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
