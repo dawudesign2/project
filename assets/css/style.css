@@ -796,6 +796,61 @@ textarea:focus {
   width: 3.75rem;
   height: 3.75rem;
   background: radial-gradient(circle at 1.875rem 4.3125rem, #fff, #ee287c);
+  z-index: -1;
+}
+.about .aboutContent {
+  display: flex;
+  flex-direction: column;
+  margin: 2.4375rem;
+}
+.about .aboutContent .aboutTitle {
+  padding: 1.3125rem;
+  width: 100%;
+}
+.about .aboutContent .aboutContainer {
+  display: flex;
+  flex-direction: column;
+}
+.about .aboutContent .aboutContainer .aboutImg {
+  margin: 0.75rem;
+}
+.about .aboutContent .aboutContainer .aboutImg img {
+  width: 100%;
+  height: auto;
+  max-width: 37.5rem;
+  max-height: 25rem;
+  object-fit: cover;
+  border: solid 0.1875rem #c79750;
+}
+.about .aboutContent .aboutContainer .aboutText {
+  font-size: 0.9375rem;
+  font-weight: 510;
+}
+.about .aboutContent .aboutContainer .aboutText p {
+  padding: 0.75rem;
+}
+
+.portfolio .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.75rem;
+}
+.portfolio .items .item {
+  flex: 50%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+.portfolio .items .item img {
+  margin-top: 8px;
+  height: 18.75rem;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  border: solid 0.125rem #c79750;
+}
+.portfolio .items .item img:hover {
+  border: solid 0.125rem #ee287c;
 }
 
 @media screen and (min-width: 600px) {
@@ -867,6 +922,42 @@ textarea:focus {
   .customers .customerCards {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .about .aboutContent .aboutTitle {
+    height: 13.125rem;
+    width: 31.875rem;
+  }
+  .about .aboutContent .aboutContainer {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .about .aboutContent .aboutContainer .aboutImg,
+.about .aboutContent .aboutContainer .aboutText {
+    flex: 1;
+  }
+  .about .aboutContent .aboutContainer .aboutImg {
+    position: sticky;
+    top: 9.6875rem;
+    max-width: 30.1875rem;
+    transition: all 280ms 0ms ease-in-out;
+  }
+  .about .aboutContent .aboutContainer .aboutImg img {
+    position: absolute;
+    top: -2.8125rem;
+  }
+  .about .aboutContent .aboutContainer .aboutText {
+    padding: 1.3125rem;
+    width: 15.625rem;
+  }
+  .about .aboutContent .aboutContainer .aboutText .text {
+    padding: 0.75rem;
+  }
+
+  .portfolio .items .item {
+    flex: 25%;
   }
 }
 
