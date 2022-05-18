@@ -38,7 +38,6 @@
     const offExplore = (e) => {
         e.preventDefault();
         document.querySelector('.explore').classList.remove('onExplore');
-
     }
     document.querySelector('#explore').addEventListener('click', onExplore);
     document.querySelector('#close').addEventListener('click', offExplore);
@@ -74,3 +73,4 @@
         restart();
     })
 })();
+
