@@ -1,7 +1,4 @@
 //Modal
-import price from './price.js'
-
-
 (function () {
     // Function Onclick ajouter la classe OPEN
     const onClick = (e) => {
@@ -76,5 +73,3 @@ import price from './price.js'
         restart();
     })
 })();
-
-price()

@@ -898,6 +898,46 @@ textarea {
     }
   }
 }
+.pricing {
+  margin:size(42) 0 size(42);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  margin: size(21);
+  img {
+    position: relative;
+    top: size(21);
+    left: 0;
+    right: 0;
+    max-width: size(420);
+    width: 100%;
+    height: size(270);
+    object-fit: cover;
+    margin: 0 auto;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+  .cardBody {
+    border: solid size(3) $colorOr;
+    width: size(444);
+    height: size(300);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      text-transform: uppercase;
+    }
+    p {
+      margin-bottom: size(21);
+    }
+  }
+}
 
 @media screen and (min-width:$minWidth) {
   .header {
