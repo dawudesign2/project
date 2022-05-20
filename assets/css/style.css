@@ -880,7 +880,7 @@ textarea:focus {
 .card img:hover {
   transform: scale(1.03);
 }
-.card .cardBody {
+.card .cardContent {
   border: solid 0.1875rem #c79750;
   width: 27.75rem;
   height: 18.75rem;
@@ -889,10 +889,10 @@ textarea:focus {
   justify-content: center;
   align-items: center;
 }
-.card .cardBody h3 {
+.card .cardContent h3 {
   text-transform: uppercase;
 }
-.card .cardBody p {
+.card .cardContent p {
   margin-bottom: 1.3125rem;
 }
 

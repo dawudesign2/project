@@ -34,7 +34,7 @@
         card.appendChild(img);
 
         const cardBody = document.createElement('div');
-        cardBody.classList.add('cardBody');
+        cardBody.classList.add('cardContent');
         card.appendChild(cardBody);
 
         const title = document.createElement('h3');
