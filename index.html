@@ -2,119 +2,281 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <title>Kcee Beauty | Wild Project</title>
-  <link rel="stylesheet" href="assets/css/app.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Kcee Beauty | WildCodeSchool</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <header class="header">
-    <nav>
-      <div class="navBar">
-        <div class="container navContainer">
-          <input class="checkbox" type="checkbox" name="" id="" />
-          <div class="hamburgerLines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-          <div class="logo">
-            <h1><span>K</span>cee Beauty</h1>
-          </div>
-          <div class="navItems">
-            <li><a href="app.html">Home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="blog.html">blog</a></li>
-            <li><a href="portfolio.html">portfolio</a></li>
-            <li><a href="contact.html">contact</a></li>
-          </div>
+    <header class="header">
+        <a href="#" class="headerIcon" id="headerIcon"></a>
+        <nav class="nav">
+            <div class="contentNav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="infoNav">
+                <a href="tel:0600000000">+33 6 000 000 00</a>
+                <a href="mailto:contact@kceebeauty.com">contact@kceebeauty.com</a>
+                <p>Address : 12 avenue des champs Elysées 75008 </p>
+            </div>
+        </nav>
+        <div class="headerTitle">
+            <h2>Re-boost yourself with <span>K</span>cee Beauty</h2>
+            <a href="" id="btn" class="btn">Make an appointment</a>
         </div>
-      </div>
-    </nav>
-    <div class="headerText">
-      <h2>Re-boost yourself with <span>K</span>cee Beauty</h2>
-      <a id='button' class="btn" href="">Make an appointment</a>
-      <div id="modal">
-        <div class="modalMask"></div>
-        <div class="modalContent">
-          <h2>Make an appointement</h2>
-          <a class="close" href="">X</a>
-          <form action="">
-            <div class="name">
-              <label for="name"></label>
-              <input type="text" placeholder="My name is" name="name" id="name" required>
+        <section id="modal" class="modal">
+            <div class="modalMask"></div>
+            <div class="modalContent">
+                <a href="" class="close">X</a>
+                <h2>Make an appointement</h2>
+                <form action="">
+                    <div class="name">
+                        <label for="name"></label>
+                        <input type="text" placeholder="My name is" name="name" id="name" required>
+                    </div>
+                    <div class="email">
+                        <label for="email"></label>
+                        <input type="email" placeholder="My email is" name="email" id="email">
+                    </div>
+                    <div class="phone">
+                        <label for="phone"></label>
+                        <input type="tel" placeholder="My phone is" name="phone" id="phone">
+                    </div>
+                    <div class="date">
+                        <label for="date"></label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="subject">
+                        <label for="subject"></label>
+                        <select placeholder="Subject line" name="subject" id="subject" required>
+                            <option disabled hidden selected>Subject line</option>
+                            <option>I'd like to start a project</option>
+                            <option>I'd like to ask a question</option>
+                            <option>I'd like to make a proposal</option>
+                        </select>
+                    </div>
+                    <div class="staff">
+                        <label for="staff"></label>
+                        <select placeholder="Staff line" name="staff" id="staff" required>
+                            <option disabled hidden selected>Subject line</option>
+                            <option>I'd like to start a project</option>
+                            <option>I'd like to ask a question</option>
+                            <option>I'd like to make a proposal</option>
+                        </select>
+                    </div>
+                    <div class="message">
+                        <label for="message"></label>
+                        <textarea name="message" placeholder="I'd like to chat about" id="message" cols="30" rows="5"
+                            required></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Send appointement" id="formButton" />
+                    </div>
+                </form>
             </div>
-            <div class="email">
-              <label for="email"></label>
-              <input type="email" placeholder="My email is" name="email" id="email">
+        </section>
+    </header>
+    <main class="main">
+        <section class="community">
+            <div class="comLeft">
+                <h3>Join the community</h3>
             </div>
-            <div class="phone">
-              <label for="phone"></label>
-              <input type="tel" placeholder="My phone is" name="phone" id="phone">
+            <div class="comRight">
             </div>
-            <div class="date">
-              <label for="date"></label>
-              <input type="date" name="date" id="date">
+        </section>
+        <section class="kcee">
+            <div class="kceeContent">
+                <div class="aboutText">
+                    <figure class="circle One"></figure>
+                    <figure class="circle Two"></figure>
+                    <a href="about.html">About.</a>
+                </div>
+                <div class="logoImg">
+                    <img src="/assets/img/kceebeauty.svg" alt="logoImg">
+                </div>
+                <div class="explorerText">
+                    <figure class="circle Three"></figure>
+                    <figure class="circle Four"></figure>
+                    <a href="#" id="explore">Explore.</a>
+                </div>
             </div>
-            <div class="subject">
-              <label for="subject"></label>
-              <select placeholder="Subject line" name="subject" id="subject" required>
-                <option disabled hidden selected>Subject line</option>
-                <option>I'd like to start a project</option>
-                <option>I'd like to ask a question</option>
-                <option>I'd like to make a proposal</option>
-              </select>
+            <div class="explore">
+                <a href="#" id="close">x close</a>
+                <div class="carousel">
+                    <div class="slides">
+                        <img src="assets/img/agency/a.jpg" class="slide" alt="slide agency">
+                        <img src="assets/img/agency/b.jpg" class="slide" alt="slide agency">
+                        <img src="assets/img/agency/c.jpg" class="slide" alt="slide agency">
+                        <img src="assets/img/agency/d.jpg" class="slide" alt="slide agency">
+                        <img src="assets/img/agency/e.jpg" class="slide" alt="slide agency">
+                        <img src="assets/img/agency/f.jpg" class="slide" alt="slide agency">
+                        <img src="assets/img/agency/g.jpg" class="slide" alt="slide agency">
+                        <img src="assets/img/agency/h.jpg" class="slide" alt="slide agency">
+                        <img src="assets/img/agency/i.jpg" class="slide" alt="slide agency">
+                        <img src="assets/img/agency/j.jpg" class="slide" alt="slide agency">
+                        <img src="assets/img/agency/k.jpg" class="slide" alt="slide agency">
+                        <img src="assets/img/agency/l.jpg" class="slide" alt="slide agency">
+                        <img src="assets/img/agency/m.jpg" class="slide" alt="slide agency">
+                    </div>
+                    <div class="controls">
+                        <div class="control prevSlide"><</div>
+                        <div class="control nextSlide">></div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="institute">
+            <figure class="circle Five"></figure>
+            <figure class="circle Six"></figure>
+            <figure class="circle Seven"></figure>
+            <div class="kceeTitle">
+                <h2>K</h2><span></span>
+                <h3>Beauty Institute</h3>
             </div>
-            <div class="staff">
-              <label for="staff"></label>
-              <select placeholder="Staff line" name="staff" id="staff" required>
-                <option disabled hidden selected>Subject line</option>
-                <option>I'd like to start a project</option>
-                <option>I'd like to ask a question</option>
-                <option>I'd like to make a proposal</option>
-              </select>
+            <div class="instituteContent">
+                <div class="instituteImg">
+                    <div class="imgOne">
+                        <img src="assets/img/agency/b.jpg" alt="institute photo">
+                    </div>
+                    <div class="imgTwo">
+                        <img src="assets/img/agency/g.jpg" alt="institute photo">
+                    </div>
+                    <div class="imgThree">
+                        <img src="assets/img/agency/m.jpg" alt="institute photot">
+                    </div>
+                </div>
             </div>
-            <div class="message">
-              <label for="message"></label>
-              <textarea name="message" placeholder="I'd like to chat about" id="message" cols="30" rows="5" required></textarea>
+        </section>
+        <section class="services">
+            <div class="kceeTitle">
+                <h2>K</h2><span></span>
+                <h3>Our services</h3>
+                <p>
+                    Treat yourself to one of our signature services. <br>
+                    You’ll leave looking and feeling better than ever before.
+                </p>
             </div>
-            <div class="submit">
-              <input type="submit" value="Send appointement" id="formButton" />
+            <div class="serviceContent">
+                <div class="textContent">
+                    <p>
+                        So you can let yourself be tempted by one of our treatments!
+                        Relax and enjoy a pleasant moment with our beauty treatments.
+                        All our treatments are carried out by our qualified beauticians.
+                        Find THE service you want to enjoy or want to offer.
+                    </p>
+                    <div class="listContent">
+                        <div class="ulLeft">
+                            <ul>
+                                <li>Nail salon</li>
+                                <li>Brazilian smoothing / tannin</li>
+                                <li>Facials</li>
+                                <li>Body care</li>
+                                <li>Light therapy</li>
+                            </ul>
+                        </div>
+                        <div class="ulRight">
+                            <ul>
+                                <li>Eyelash extension</li>
+                                <li>Hyaluropen</li>
+                                <li>Microneedling</li>
+                                <li>Massage</li>
+                                <li>Colombian facelift</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="" class="btn">Learn more</a>
+                </div>
+                <div class="imgContent">
+                    <img src="assets/img/bande2.png" alt="service image">
+                </div>
             </div>
-          </form>
+        </section>
+        <section class="whyUs">
+            <div class="whyUsImg">
+                <img src="assets/img/bande1.png" alt="kcee">
+            </div>
+            <div class="whyUsContent">
+                <figure class="circle Eight"></figure>
+                <figure class="circle Nine"></figure>
+                <figure class="circle Ten"></figure>
+                <h2>Why <span>Us</span></h2>
+                <p>
+                    We are the leading beauty salon in Paris providing high-quality hairdressing,
+                    makeup, and skin care services to everyone.
+
+                    Our clients appreciate and value our level of customer service,
+                    the skills of our stylists and estheticians as well as our professional approach to everything we
+                    do.
+                </p>
+                <a href="" class="btn">Learn more</a>
+
+            </div>
+        </section>
+        <section class="register">
+            <div class="registerImg">
+                <img src="assets/img/bande3.png" alt="register img">
+            </div>
+            <div class="registerContent">
+                <p>register now </p>
+                <p>for our events .</p>
+                <a href="" class="btn">Let's start</a>
+            </div>
+        </section>
+        <section class="customers">
+            <div class="kceeTitle">
+                <h2>K</h2><span></span>
+                <h3>What customers think .</h3>
+            </div>
+            <div class="customerCards">
+                <div class="card">
+                    <img src="assets/img/bande3.png" alt="customer img">
+                    <div class="cardBody">
+                        <h4>Laura Doe <span>5 days ago</span></h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quam aliquid voluptate
+                            provident nihil vero consequatur, expedita asperiores rerum odit. Corporis tempore alias
+                            quam qui blanditiis consequatur praesentium eveniet vero.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/bande3.png" alt="customer img">
+                    <div class="cardBody">
+                        <h4>Laura Doe <span>5 days ago</span></h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quam aliquid voluptate
+                            provident nihil vero consequatur, expedita asperiores rerum odit. Corporis tempore alias
+                            quam qui blanditiis consequatur praesentium eveniet vero.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/bande3.png" alt="customer img">
+                    <div class="cardBody">
+                        <h4>Laura Doe <span>5 days ago</span></h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quam aliquid voluptate
+                            provident nihil vero consequatur, expedita asperiores rerum odit. Corporis tempore alias
+                            quam qui blanditiis consequatur praesentium eveniet vero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footerContent">
+            &copy; 2022 - <span>K</span>cee Beauty
         </div>
-      </div>
-    </div>
-  </header>
-  <section class="whyUs">
-    <div class="container">
-      <div class="img"></div>
-      <div class="whyUsContent">
-        <h3>Why our clients choose us</h3>
-        <p>
-          We are the leading beauty salon in Paris providing high-quality hairdressing, 
-          makeup, and skin care services to everyone.
-        </p>
-        <p>
-          Our clients appreciate and value our level of customer service, 
-          the skills of our stylists and estheticians as well as our professional approach to everything we do.
-        </p>
-        <a href="about.html" class="btn">Learn more</a>
-      </div>
-    </div>
-  </section>
-  <section class="ourServices">
-    <div class="container">
-      <h2>Our Services</h2>
-      <p>
-        Treat yourself to one of our signature services.
-        You’ll leave looking and feeling better than ever before.
-      </p>
-    </div>
-  </section>
-  <script src="assets/js/app.js"></script>
+    </footer>
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>
